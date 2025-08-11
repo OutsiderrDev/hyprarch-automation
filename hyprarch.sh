@@ -9,6 +9,8 @@ echo "
           __/ | |                               
          |___/|_|                               
 "
+sudo -v
+while true; do sudo -n true; sleep 60; done 2>/dev/null &
 #Installation of pacakges
 sudo pacman -S --needed --noconfirm base-devel zsh firefox neovim fastfetch discord wget qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 
@@ -23,7 +25,7 @@ cd ..
 sudo rm -rf yay
 
 #Installation of bottles
-sudo yay -S --needed --noconfirm bottles
+yay -S --needed --noconfirm bottles
 
 #Default wallpaper
 sudo mkdir -p /home/"$USER"/Pictures/wallpapers/
