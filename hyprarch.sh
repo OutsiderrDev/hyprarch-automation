@@ -15,10 +15,10 @@ sudo -v
 while true; do sudo -n true; sleep 60; done 2>/dev/null &
 
 #Installation of pacakges
-sudo pacman -S --needed --noconfirm base-devel zsh firefox neovim fastfetch discord wget qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
+sudo pacman -S --needed --noconfirm base-devel fish firefox neovim fastfetch discord wget qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg libreoffice-fresh
 
-#Setting zsh af default shell
-sudo chsh -s /usr/bin/zsh "$USER"
+#Setting fish as default shell
+sudo chsh -s /usr/bin/fish "$USER"
 
 #Installation of yay
 git clone https://aur.archlinux.org/yay.git
